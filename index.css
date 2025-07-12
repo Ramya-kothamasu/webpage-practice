@@ -1,0 +1,130 @@
+ /* Ensure full screen fit */
+        html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        background-color: #ffe4e1;
+        box-sizing: border-box;
+        min-width: 100vw;
+        }
+
+        /* Header */
+        header {
+        background-color: #FF9933;  /* Saffron */
+        color: black;
+        padding: 20px;
+        text-align: center;
+        }
+
+        /* Navigation bar */
+        nav {
+        background-color: #138808;  /* Indian green */
+        padding: 10px;
+        text-align: center;
+        }
+
+        nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+        }
+
+        nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        }
+
+        /* Main content fills remaining space */
+        main {
+        flex: 1;
+        padding: 20px;
+        }
+
+        main h2 {
+        text-align: left;
+        color: black;
+        }
+        h3{
+            height: fit-content;
+            width: fit-content;
+        }
+        main p, main ul {
+        text-align: left;
+        color: black;
+        }
+
+        /* Asides */
+        aside {
+        background-color: lightgray;
+        color: black;
+        padding: 10px;
+        margin: 10px 0;
+        }
+
+    .aside-right {
+      float: right;
+      width: 150px;
+      height: fit-content;
+    }
+
+    .aside-left {
+      float: left;
+      width: 45%;
+      height: fit-content;
+    }
+
+    .aside-bottom-right {
+      float: right;
+      width: 20%;
+    }
+
+    aside img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Article styling */
+    article {
+      padding: 20px;
+      color: black;
+      text-align: center;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: lightblue;
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+      .aside-right, .aside-left, .aside-bottom-right {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    @media (max-width: 500px) {
+      header, footer {
+        padding: 20px;
+      }
+      main {
+        padding: 10px;
+      }
+    }
