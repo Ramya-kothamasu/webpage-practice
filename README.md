@@ -16,4 +16,7 @@ It was created to practice front-end development skills such as responsive layou
 - CSS3
 
 Project Structure
-
+/ (root)
+├── index.html # Main webpage structure
+├── style.css # Styling and layout
+└── README.md # Project documentation
